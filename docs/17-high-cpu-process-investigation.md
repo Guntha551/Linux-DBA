@@ -127,7 +127,7 @@ $ top -c -u oracle
 $ ps -u postgres -o pid,%cpu,etime,args --sort=-%cpu | head
 ```
 
-**Note for DBAs:** On a database server almost everything runs as `oracle`, `postgres` or `mysql`. The OS user tells you *which database* is busy. The **database** user and the application come from Step 7.
+**Note for DBAs:** On a database server almost everything runs as `oracle`, `grid`, `postgres` or `mysql`, so the OS user alone does not tell you *which database* is busy. To see CPU per database instance (and ASM work per database), see [18 CPU by database](18-cpu-by-database.md). The **database** user and the application come from Step 7.
 
 Who is logged in and what they are running:
 

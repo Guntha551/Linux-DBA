@@ -29,11 +29,13 @@ Linux-DBA/
 │   ├── 14-mysql-on-linux.md
 │   ├── 15-security-firewall-selinux.md
 │   ├── 16-troubleshooting-scenarios.md
-│   └── 17-high-cpu-process-investigation.md
+│   ├── 17-high-cpu-process-investigation.md
+│   └── 18-cpu-by-database.md
 └── scripts/
     ├── db_server_health_check.sh
     ├── disk_space_alert.sh
     ├── cleanup_old_files.sh
+    ├── cpu_by_database.sh
     └── top_resource_consumers.sh
 ```
 
@@ -55,6 +57,7 @@ Linux-DBA/
 | Open a port, deal with SELinux                    | [15 Security, firewall & SELinux](docs/15-security-firewall-selinux.md) |
 | Walk through real incidents step by step          | [16 Troubleshooting scenarios](docs/16-troubleshooting-scenarios.md) |
 | Find a high-CPU process: its user, command, what it is doing and its SQL | [17 High-CPU process investigation](docs/17-high-cpu-process-investigation.md) |
+| Find which database / instance / PDB is using the CPU | [18 CPU by database](docs/18-cpu-by-database.md) |
 
 ## Conventions
 
@@ -72,6 +75,7 @@ chmod +x *.sh
 ./db_server_health_check.sh            # one-shot health report
 ./disk_space_alert.sh 85               # warn on filesystems >= 85% full
 ./top_resource_consumers.sh 10         # top 10 CPU and memory processes
+./cpu_by_database.sh 10 -v             # CPU per database instance (run as root)
 ./cleanup_old_files.sh /u01/app/oracle/diag "*.trc" 7        # dry run
 ./cleanup_old_files.sh /u01/app/oracle/diag "*.trc" 7 --delete
 ```
