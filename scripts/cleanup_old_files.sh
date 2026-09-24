@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+# nareshsundaraneedi
 # cleanup_old_files.sh - remove old trace / audit / log files. DRY RUN by default.
 #
 # Usage: ./cleanup_old_files.sh DIRECTORY PATTERN DAYS [--delete]
