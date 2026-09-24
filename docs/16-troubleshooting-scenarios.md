@@ -22,7 +22,7 @@ $ vmstat 2 5                 # r (CPU queue), si/so (swap), wa (I/O wait)
 | `wa` high, many `b` processes | Disk | `iostat -xz 5`, `iotop -oP` |
 | All low | Not the OS | Look inside the DB: locks, waits, plans |
 
-**Step 3. Find the process and map it to the database session** (see [04](04-memory-and-cpu.md#step-7--top-cpu-consumers-and-mapping-to-db-sessions)).
+**Step 3. Find the process and map it to the database session** (see [17 High-CPU process investigation](17-high-cpu-process-investigation.md)).
 
 **Step 4. Check history** to see when it started:
 

@@ -28,7 +28,8 @@ Linux-DBA/
 │   ├── 13-postgresql-on-linux.md
 │   ├── 14-mysql-on-linux.md
 │   ├── 15-security-firewall-selinux.md
-│   └── 16-troubleshooting-scenarios.md
+│   ├── 16-troubleshooting-scenarios.md
+│   └── 17-high-cpu-process-investigation.md
 └── scripts/
     ├── db_server_health_check.sh
     ├── disk_space_alert.sh
@@ -53,6 +54,7 @@ Linux-DBA/
 | Engine-specific OS tasks                          | [12 Oracle](docs/12-oracle-on-linux.md), [13 PostgreSQL](docs/13-postgresql-on-linux.md), [14 MySQL](docs/14-mysql-on-linux.md) |
 | Open a port, deal with SELinux                    | [15 Security, firewall & SELinux](docs/15-security-firewall-selinux.md) |
 | Walk through real incidents step by step          | [16 Troubleshooting scenarios](docs/16-troubleshooting-scenarios.md) |
+| Find a high-CPU process: its user, command, what it is doing and its SQL | [17 High-CPU process investigation](docs/17-high-cpu-process-investigation.md) |
 
 ## Conventions
 

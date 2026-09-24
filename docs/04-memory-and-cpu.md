@@ -132,6 +132,10 @@ SELECT * FROM performance_schema.threads WHERE THREAD_OS_ID = <TID>;
 
 ---
 
+> For a full step-by-step investigation of one busy process (user, command, threads, system calls, SQL), see [17 High-CPU process investigation](17-high-cpu-process-investigation.md).
+
+---
+
 ## Step 8 — Clear the page cache (testing only)
 
 ```bash
